@@ -1,0 +1,22 @@
+<table class="table-custom">
+  <tr class="bg-blue">
+    <th colspan="3">Team Status</th>
+  </tr>
+  <tr class="bg-gray">
+    <th class="name-text">Team Name</th>
+    <th class="other-text">Approved by Manager</th>
+    <th class="other-text">Approved by Director</th>
+  </tr>
+  <tr *ngFor="let team of teamList">
+    <th>  {{ team.Team.TeamName }}</th>
+    <th>
+      <circle-component [Status]="team.Team.ApprovedByManager" (click)="ManagerChangeState(team.Team.ApprovedByManager, team.Team.Id)"></circle-component>
+    </th>
+    <th>
+      <circle-component [Status]="team.Team.ApprovedByDirector" (click)="DirectorChangeState(team.Team.ApprovedByDirector, team.Team.Id)"></circle-component>
+    </th>
+  </tr>
+  <thead>
+
+  </thead>
+</table>
