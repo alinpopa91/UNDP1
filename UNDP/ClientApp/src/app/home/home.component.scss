@@ -1,0 +1,50 @@
+body {
+}
+
+table, th, thead, td {
+  border: 1px solid black;
+}
+
+.table-custom {
+  width: 500px;
+  height: 60px;
+}
+
+.bg-blue {
+  background-color: #1F4E78;
+  text-align: center;
+  color: white;
+  height:45px;
+}
+
+.bg-gray {
+  background-color: #E2EFDA;
+}
+
+.bg-purpleblue {
+  background-color: #D9E1F2;
+}
+
+.name-text {
+  width: 50%;
+}
+
+.other-text {
+  width: 25%;
+}
+
+.no-action {
+  background-image: url("../../assets/images/noaction.png");
+  background-repeat: no-repeat;
+}
+
+.approved {
+  background-image: url("../../assets/images/approved.png");
+  background-repeat: no-repeat;
+}
+
+.rejected {
+  background-image: url("../../assets/images/rejected.png");
+  background-repeat: no-repeat;
+}
+
